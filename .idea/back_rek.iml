@@ -118,6 +118,11 @@
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/psr/cache" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -21,3 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::apiResource('invoices', InvoiceController::class);
 
+Route::apiResource('vat', \App\Http\Controllers\VatModelController::class);
+
+Route::apiResource('products', \App\Http\Controllers\ProductController::class);
