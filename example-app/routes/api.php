@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InvoiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,12 @@ Route::apiResource('invoices', InvoiceController::class);
 Route::apiResource('vat', \App\Http\Controllers\VatModelController::class);
 
 Route::apiResource('products', \App\Http\Controllers\ProductController::class);
+
+
+Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login',    [AuthController::class, 'login']);
+Route::post('/refresh',  [AuthController::class, 'refresh']);
+Route::post('/logout',   [AuthController::class, 'logout'])
+    ->middleware('auth:sanctum');
+
+Route::middleware('auth:sanctum')->get('/user', fn(Request $r) => $r->user());
