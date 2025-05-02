@@ -40,7 +40,7 @@ class AuthController extends Controller
         ], 200)->cookie(
             'refresh_token', $plainRefresh,
             60 * 24 * 14,
-            '/', null, true, true, false, 'Strict'
+            'localhost', null, true, true, false, 'None'
         );
 
     }
@@ -118,7 +118,7 @@ class AuthController extends Controller
         ])->cookie(
             'refresh_token', $newPlain,
             60 * 24 * 14,
-            '/', null, true, true, false, 'Strict'
+            'localhost', null, true, true, false, 'None'
         );
     }
 }
