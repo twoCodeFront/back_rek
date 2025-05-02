@@ -18,7 +18,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', fn(Request $r) => $r->user());
     Route::apiResource('invoices', InvoiceController::class);
     Route::apiResource('vat', VatModelController::class);
-    Route::apiResource('products', ProductController::class);
+    Route::apiResource('products', ProductController::class)
+        ->middleware(['role:admin']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
 

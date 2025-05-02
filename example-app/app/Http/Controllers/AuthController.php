@@ -74,6 +74,8 @@ class AuthController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
+        $user->assignRole('admin');
+
         return response()->json([
             'access_token' => $user->createToken('web', [], now()->addMinutes(15)),
             'user' => $user,

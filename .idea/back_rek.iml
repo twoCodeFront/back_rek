@@ -123,6 +123,7 @@
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/doctrine/deprecations" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/example-app/vendor/spatie/laravel-permission" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
